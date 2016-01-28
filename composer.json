@@ -1,0 +1,30 @@
+{
+    "name": "swissup/flarum-ext-theme",
+    "description": "Swissup forum theme.",
+    "type": "flarum-extension",
+    "keywords": ["theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vova Yatsyuk",
+            "email": "vova.yatsyuk@gmail.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.3",
+        "vovayatsyuk/flarum-ext-auth-magento": "*"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Swissup theme",
+            "icon": {
+                "image": "icon.png",
+                "backgroundSize": "contain",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundColor": "#f4f4f4",
+                "color": "#bc0002"
+            }
+        }
+    }
+}
