@@ -1,5 +1,6 @@
 import { extend } from 'flarum/extend';
 import HeaderPrimary from 'flarum/components/HeaderPrimary';
+import HeaderSecondary from 'flarum/components/HeaderSecondary';
 
 app.initializers.add('swissup-theme', function() {
   extend(HeaderPrimary.prototype, 'items', function(items) {
@@ -9,5 +10,9 @@ app.initializers.add('swissup-theme', function() {
         Back to the main site
       </a>
     );
+  });
+
+  extend(HeaderSecondary.prototype, 'items', function(items) {
+    items.remove('signUp');
   });
 });
